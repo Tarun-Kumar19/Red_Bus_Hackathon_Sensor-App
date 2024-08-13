@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/accelerometerCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/blue"
+        android:layout_margin="26dp">
+
+        <TextView
+            android:id="@+id/accelerometerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+
+            android:padding="2dp"
+
+            android:text="Accelerometer Sensor Data:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/xAxis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X-axis:"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/yAxis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y-axis:"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/xAxis"
+            android:layout_marginTop="93dp"/>
+
+        <TextView
+            android:id="@+id/zAxis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z-axis:"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/yAxis"
+            android:layout_marginTop="140dp"/>
+
+        <TextView
+            android:id="@+id/gyroscopeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="50dp"
+            android:padding="2dp"
+            android:text="Gyroscope Sensor Data:"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/gyroX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X-axis:"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/zAxis"
+            android:layout_marginTop="240dp"/>
+
+        <TextView
+            android:id="@+id/gyroY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y-axis:"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/gyroX"
+            android:layout_marginTop="280dp"/>
+
+        <TextView
+            android:id="@+id/gyroZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z-axis:"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/gyroY"
+            android:layout_marginTop="320dp"/>
+
+        <TextView
+            android:id="@+id/magnetometerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginRight="50dp"
+
+            android:padding="2dp"
+            android:text="Magnetometer Sensor Data:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/magX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X-axis:"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/gyroZ"
+            android:layout_marginTop="410dp"/>
+
+        <TextView
+            android:id="@+id/magY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y-axis:"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/magX"
+            android:layout_marginTop="460dp"/>
+
+        <TextView
+            android:id="@+id/magZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z-axis:"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/magY"
+            android:layout_marginTop="510dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="560dp"
+            app:srcCompat="@drawable/redb" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
